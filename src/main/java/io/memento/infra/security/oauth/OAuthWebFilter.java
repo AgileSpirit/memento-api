@@ -40,7 +40,9 @@ public class OAuthWebFilter extends HttpHeadersAccessor implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
 
-        if ("OPTIONS".equals(request.getMethod()) || request.getRequestURI().equals("/api/connection/login")) {
+        if ("OPTIONS".equals(request.getMethod())
+                || request.getRequestURI().equals("/api/connection/login")
+                || request.getRequestURI().equals("/api/accounts/")) {
             /*
              * In case of preflight (OPTIONS method) or connection requests, we do nothing.
              * In all other cases, requests should have an access token into their headers.
