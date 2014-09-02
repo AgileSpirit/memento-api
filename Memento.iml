@@ -93,15 +93,6 @@
     <orderEntry type="library" name="Maven: com.google.guava:guava:17.0" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:20030211.134440" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjtools:1.8.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: net.bull.javamelody:javamelody-core:1.46.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jrobin:jrobin:1.5.9" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.lowagie:itext:4.2.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.bouncycastle:bctsp-jdk14:1.38" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.bouncycastle:bcprov-jdk14:1.38" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.bouncycastle:bcmail-jdk14:1.38" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: jfree:jfreechart:1.0.12" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: jfree:jcommon:1.0.15" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.swinglabs:pdf-renderer:1.0.5" level="project" />
     <orderEntry type="library" name="Maven: com.codahale.metrics:metrics-core:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.codahale.metrics:metrics-servlets:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.codahale.metrics:metrics-healthchecks:3.0.1" level="project" />

@@ -5,9 +5,29 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../memento-ui/conf/config.js.tpl" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../memento-ui/app/scripts/conf/development.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../memento-ui/app/scripts/conf/production.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codahale_metrics_metrics_annotation_3_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codahale_metrics_metrics_core_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codahale_metrics_metrics_healthchecks_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codahale_metrics_metrics_json_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codahale_metrics_metrics_jvm_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codahale_metrics_metrics_servlets_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_4_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ryantenney_metrics_metrics_spring_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_15.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bull_javamelody_javamelody_core_1_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_fluent_hc_4_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcmail_jdk14_1_38.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk14_1_38.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bctsp_jdk14_1_38.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jrobin_jrobin_1_5_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_swinglabs_pdf_renderer_1_0_5.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../memento-ui/dist/scripts/scripts.693f0c81.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../memento-ui/Gruntfile.js" afterPath="$PROJECT_DIR$/../memento-ui/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/memento/infra/security/oauth/OAuthWebFilter.java" afterPath="$PROJECT_DIR$/src/main/java/io/memento/infra/security/oauth/OAuthWebFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Memento.iml" afterPath="$PROJECT_DIR$/Memento.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Memento_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Memento_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/metrics/MetricsConfig.java" afterPath="$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/metrics/MetricsConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../memento-ui/app/scripts/services/apiservices.js" afterPath="$PROJECT_DIR$/../memento-ui/app/scripts/services/apiservices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../memento-ui/app/index.html" afterPath="$PROJECT_DIR$/../memento-ui/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../memento-ui/dist/index.html" afterPath="$PROJECT_DIR$/../memento-ui/dist/index.html" />
@@ -31,7 +51,6 @@
     <file path="$PROJECT_DIR$/src/main/java/io/memento/domain/services/impl/NoteServiceImpl.java" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409598690300" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/resources/logback.xml" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409598690300" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/io/memento/domain/model/Note.java" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409598690300" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/servletfilter/HttpActivityServletFilter.java" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409598690300" ignored="false" />
     <file path="/HttpHeadersAccessor.java" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409603532114" ignored="false" />
     <file path="/apiservices.js" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409608593739" ignored="false" />
     <file path="/applicationconfig.js" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409608219271" ignored="false" />
@@ -39,6 +58,7 @@
     <file path="/Gruntfile.js" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409609246515" ignored="false" />
     <file path="/index.html" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409640704653" ignored="false" />
     <file path="/development.json" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409609923924" ignored="false" />
+    <file path="/pom.xml" changelist="f40556e7-89ce-40b9-bd2b-67c8501ba379" time="1409675705992" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,10 +119,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="development.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="development.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../memento-ui/app/scripts/conf/development.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="127" selection-end="127" vertical-scroll-proportion="0.16411379">
+            <state line="5" column="7" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="369" column="20" selection-start="14495" selection-end="14495" vertical-scroll-proportion="-5.769231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MetricsConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/metrics/MetricsConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="23" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HealthCheckServletContextListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/metrics/HealthCheckServletContextListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MetricsServletContextListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/metrics/MetricsServletContextListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpActivityServletFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/servletfilter/HttpActivityServletFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="13" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpActivitySupervisor.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/servletfilter/HttpActivitySupervisor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="27" selection-start="919" selection-end="919" vertical-scroll-proportion="0.6717724">
               <folding />
             </state>
           </provider>
@@ -117,64 +200,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../memento-ui/app/scripts/conf/production.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../memento-ui/app/scripts/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../memento-ui/conf/production.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="50" selection-start="19" selection-end="52" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../memento-ui/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="73" column="45" selection-start="3135" selection-end="3135" vertical-scroll-proportion="-7.9166665">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apiservices.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../memento-ui/app/scripts/services/apiservices.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountResourceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/application/impl/AccountResourceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="30" selection-start="665" selection-end="678" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OAuthWebFilter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/security/oauth/OAuthWebFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="46" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,7 +217,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../memento-ui" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
@@ -199,7 +228,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/io/memento/infra/security/HttpHeadersAccessor.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../memento-ui/web.js" />
         <option value="$PROJECT_DIR$/../memento-ui/app/scripts/services/applicationconfig.js" />
         <option value="$PROJECT_DIR$/../memento-ui/package.json" />
@@ -212,6 +240,8 @@
         <option value="$PROJECT_DIR$/../memento-ui/app/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/io/memento/infra/security/oauth/OAuthWebFilter.java" />
         <option value="$PROJECT_DIR$/../memento-ui/app/scripts/conf/development.js" />
+        <option value="$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/metrics/MetricsConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -505,7 +535,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
+              <option name="myItemId" value="monitoring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servletfilter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -539,11 +573,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
+              <option name="myItemId" value="monitoring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oauth" />
+              <option name="myItemId" value="metrics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -933,55 +967,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../memento-ui/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="134" selection-end="134" vertical-scroll-proportion="-0.21710527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../memento-ui/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="400" selection-end="400" vertical-scroll-proportion="0.49342105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../memento-ui/.bowerrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../memento-ui/app/scripts/controllers/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../memento-ui/conf/config.js.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../memento-ui/conf/development.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="19" selection-end="41" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../memento-ui/conf/production.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="50" selection-start="19" selection-end="52" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../memento-ui/app/scripts/conf/production.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="7" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
@@ -1040,7 +1025,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../memento-ui/app/scripts/conf/development.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="127" selection-end="127" vertical-scroll-proportion="0.16411379">
+        <state line="5" column="7" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="369" column="20" selection-start="14495" selection-end="14495" vertical-scroll-proportion="-5.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/metrics/MetricsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="23" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/metrics/HealthCheckServletContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/metrics/MetricsServletContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/servletfilter/HttpActivityServletFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/memento/infra/monitoring/servletfilter/HttpActivitySupervisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="27" selection-start="919" selection-end="919" vertical-scroll-proportion="0.6717724">
           <folding />
         </state>
       </provider>

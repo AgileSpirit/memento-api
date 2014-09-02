@@ -357,19 +357,23 @@
         <!-- JAVAMELODY : tool for monitoring Java applications (based on servlet filtering) -->
         <!-- Url : http://[hostname]:[port]/[context]/monitoring -->
         <!-- Doc : https://code.google.com/p/javamelody/wiki/UserGuide -->
+        <!--
         <dependency>
             <groupId>net.bull.javamelody</groupId>
             <artifactId>javamelody-core</artifactId>
             <version>${javamelody.version}</version>
             <scope>runtime</scope>
         </dependency>
+        -->
         <!-- ITEXT : used by JavaMelody for PDF generation -->
+        <!--
         <dependency>
             <groupId>com.lowagie</groupId>
             <artifactId>itext</artifactId>
             <version>${itext.version}</version>
             <scope>runtime</scope>
         </dependency>
+        -->
 
         <!-- METRICS : library that gives measure on the behavior of some application components -->
         <dependency>

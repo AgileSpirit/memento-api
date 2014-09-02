@@ -73,15 +73,6 @@
           <element id="library" level="project" name="Maven: com.google.guava:guava:17.0" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:20030211.134440" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjtools:1.8.1" />
-          <element id="library" level="project" name="Maven: net.bull.javamelody:javamelody-core:1.46.0" />
-          <element id="library" level="project" name="Maven: org.jrobin:jrobin:1.5.9" />
-          <element id="library" level="project" name="Maven: com.lowagie:itext:4.2.1" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bctsp-jdk14:1.38" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk14:1.38" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bcmail-jdk14:1.38" />
-          <element id="library" level="project" name="Maven: jfree:jfreechart:1.0.12" />
-          <element id="library" level="project" name="Maven: jfree:jcommon:1.0.15" />
-          <element id="library" level="project" name="Maven: org.swinglabs:pdf-renderer:1.0.5" />
           <element id="library" level="project" name="Maven: com.codahale.metrics:metrics-core:3.0.1" />
           <element id="library" level="project" name="Maven: com.codahale.metrics:metrics-servlets:3.0.1" />
           <element id="library" level="project" name="Maven: com.codahale.metrics:metrics-healthchecks:3.0.1" />

@@ -21,8 +21,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.concurrent.TimeUnit;
 
-@Configuration
-@EnableMetrics
+//@Configuration
+//@EnableMetrics
 public class MetricsConfig extends MetricsConfigurerAdapter {
 
     @Inject
