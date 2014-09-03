@@ -1,5 +1,6 @@
 package io.memento.infra.repository;
 
+import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -70,6 +71,7 @@ public class JpaRepositoryConfig {
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         factory.setDataSource(dataSource);
+        factory.setPersistenceProvider(new HibernatePersistenceProvider());
         factory.setJpaProperties(jpaProperties());
         factory.afterPropertiesSet();
         return factory.getObject();
