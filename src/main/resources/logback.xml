@@ -30,7 +30,7 @@
     <logger name="org.dbunit" level="WARN"/>
     <logger name="net.bull.javamelody" level="WARN"/>
     <logger name="org.apache.velocity.app" level="WARN"/>
-    <logger name="io.memento" level="DEBUG"/>
+    <logger name="io.memento" level="INFO"/>
 
     <root level="WARN">
         <appender-ref ref="stdout"/>

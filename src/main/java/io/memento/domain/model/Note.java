@@ -1,6 +1,7 @@
 package io.memento.domain.model;
 
-import javax.persistence.*;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 
 @Entity
 @DiscriminatorValue(value = DocumentType.Values.NOTE)

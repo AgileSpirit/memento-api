@@ -1,9 +1,9 @@
 package io.memento.application.impl;
 
+import io.memento.application.BookmarkResource;
 import io.memento.application.exceptions.ApplicationException;
 import io.memento.application.exceptions.BadRequestParametersException;
 import io.memento.application.exceptions.BookmarkNotFoundException;
-import io.memento.application.BookmarkResource;
 import io.memento.domain.model.Account;
 import io.memento.domain.model.Bookmark;
 import io.memento.domain.services.BookmarkService;

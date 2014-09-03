@@ -3,13 +3,15 @@ package io.memento.application.impl;
 import io.memento.application.DocumentResource;
 import io.memento.application.response.FindDocumentsResponse;
 import io.memento.domain.model.Account;
-import io.memento.domain.model.Document;
 import io.memento.domain.services.DocumentService;
 import io.memento.infra.security.HttpHeadersAccessor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;

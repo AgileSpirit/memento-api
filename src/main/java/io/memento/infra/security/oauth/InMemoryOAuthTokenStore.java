@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 import javax.inject.Named;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 import java.util.UUID;
 
 /**

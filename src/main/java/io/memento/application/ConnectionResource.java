@@ -4,7 +4,6 @@ import io.memento.application.request.ConnectionRequest;
 import io.memento.application.response.ConnectionResponse;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * Project: Memento
