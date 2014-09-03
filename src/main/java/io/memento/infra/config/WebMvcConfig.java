@@ -18,11 +18,6 @@ import java.util.List;
 @EnableWebMvc
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        // registry.addResourceHandler("/**").addResourceLocations("/static/app/");
-    }
-
     @Bean
     public WebContentInterceptor webContentInterceptor() {
         WebContentInterceptor interceptor = new WebContentInterceptor();

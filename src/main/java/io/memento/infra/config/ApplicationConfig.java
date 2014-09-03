@@ -18,13 +18,4 @@ public class ApplicationConfig {
         return new PropertySourcesPlaceholderConfigurer();
     }
 
-    /*
-     * JMX MBean configuration
-     */
-
-    @Bean
-    public MetadataNamingStrategy namingStrategy() {
-        return new MetadataNamingStrategy(new AnnotationJmxAttributeSource());
-    }
-
 }
