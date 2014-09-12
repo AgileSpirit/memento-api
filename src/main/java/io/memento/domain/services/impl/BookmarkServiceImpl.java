@@ -1,6 +1,5 @@
 package io.memento.domain.services.impl;
 
-import com.codahale.metrics.annotation.Timed;
 import com.google.common.collect.Lists;
 import io.memento.application.exceptions.Http500InternalServerError;
 import io.memento.domain.model.Account;
@@ -38,12 +37,10 @@ public class BookmarkServiceImpl implements BookmarkService {
         this.bookmarkRepository = bookmarkRepository;
     }
 
-    @Timed
     public Bookmark findOne(Long id) {
         return bookmarkRepository.findOne(id);
     }
 
-    @Timed
     public List<Bookmark> findAll() {
         final List<Order> orders = new ArrayList<>();
         orders.add(new Order(Direction.DESC, "creationDate"));
@@ -66,7 +63,6 @@ public class BookmarkServiceImpl implements BookmarkService {
     }
 
     @Override
-    @Timed
     @Transactional
     public Bookmark save(Bookmark bookmark) {
         bookmark.setCreationDate(new DateTime());
@@ -74,7 +70,6 @@ public class BookmarkServiceImpl implements BookmarkService {
     }
 
     @Override
-    @Timed
     @Transactional
     public Bookmark update(Bookmark bookmark) {
         bookmark.setModificationDate(new DateTime());
@@ -82,7 +77,6 @@ public class BookmarkServiceImpl implements BookmarkService {
     }
 
     @Override
-    @Timed
     @Transactional
     public void delete(Long id) {
         bookmarkRepository.delete(id);

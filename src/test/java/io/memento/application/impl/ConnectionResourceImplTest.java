@@ -6,6 +6,7 @@ import io.memento.domain.model.Account;
 import io.memento.domain.model.EntityFactory;
 import io.memento.domain.services.AccountService;
 import org.assertj.core.api.Assertions;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -19,6 +20,7 @@ import org.mockito.runners.MockitoJUnitRunner;
  * Email:   jbuget@agile-spirit.fr
  * Date:    22/08/2014
  */
+@Ignore
 @RunWith(MockitoJUnitRunner.class)
 public class ConnectionResourceImplTest {
 

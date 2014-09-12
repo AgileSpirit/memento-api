@@ -1,6 +1,5 @@
 package io.memento.domain.services.impl;
 
-import com.codahale.metrics.annotation.Timed;
 import com.google.common.collect.Lists;
 import io.memento.domain.model.Account;
 import io.memento.domain.model.Note;
@@ -29,7 +28,6 @@ public class NoteServiceImpl implements NoteService {
         this.noteRepository = noteRepository;
     }
 
-    @Timed
     public Note findOne(Long id) {
         return noteRepository.findOne(id);
     }
@@ -48,24 +46,18 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    @Timed
-    @Transactional
     public Note save(Note note) {
         note.setCreationDate(new DateTime());
         return noteRepository.save(note);
     }
 
     @Override
-    @Timed
-    @Transactional
     public Note update(Note note) {
         note.setModificationDate(new DateTime());
         return noteRepository.save(note);
     }
 
     @Override
-    @Timed
-    @Transactional
     public void delete(Long id) {
         noteRepository.delete(id);
     }

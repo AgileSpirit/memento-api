@@ -51,9 +51,7 @@
         <httpclient.version>4.2.6</httpclient.version>
         <commons-beanutils.version>20030211.134440</commons-beanutils.version>
         <aspectj.version>1.8.1</aspectj.version>
-        <fitnesse.version>20140630</fitnesse.version>
         <jetty-project.version>9.2.2.v20140723</jetty-project.version>
-        <mongo-java-driver.version>2.12.2</mongo-java-driver.version>
         <cglib.version>2.2.2</cglib.version>
         <google-api-client.version>1.19.0</google-api-client.version>
         <postgresql.version>9.3-1102-jdbc41</postgresql.version>
@@ -180,42 +178,6 @@
             <version>${hibernate-jpa.version}</version>
         </dependency>
 
-        <!-- C3P0 : JDBC connection pooling & Hibernate support -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-c3p0</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-dbcp2</artifactId>
-            <version>${commons-dbcp2.version}</version>
-        </dependency>
-
-        <!-- ======= -->
-        <!-- MONGODB -->
-        <!-- ======= -->
-
-<!--
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-mongodb</artifactId>
-            <version>${spring-data-mongodb.version}</version>
-        </dependency>
-        &lt;!&ndash; mongodb java driver &ndash;&gt;
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-            <version>${mongo-java-driver.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>cglib</groupId>
-            <artifactId>cglib</artifactId>
-            <version>${cglib.version}</version>
-        </dependency>
--->
-
         <!-- ================= -->
         <!-- REST WEB SERVICES -->
         <!-- ================= -->
@@ -292,6 +254,12 @@
             <version>${postgresql.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+
         <!-- ============ -->
         <!-- TOOLS / UTIL -->
         <!-- ============ -->
@@ -349,66 +317,6 @@
             <artifactId>aspectjtools</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
-
-        <!-- ========== -->
-        <!-- MONITORING -->
-        <!-- ========== -->
-
-        <!-- JAVAMELODY : tool for monitoring Java applications (based on servlet filtering) -->
-        <!-- Url : http://[hostname]:[port]/[context]/monitoring -->
-        <!-- Doc : https://code.google.com/p/javamelody/wiki/UserGuide -->
-        <!--
-        <dependency>
-            <groupId>net.bull.javamelody</groupId>
-            <artifactId>javamelody-core</artifactId>
-            <version>${javamelody.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-        -->
-        <!-- ITEXT : used by JavaMelody for PDF generation -->
-        <!--
-        <dependency>
-            <groupId>com.lowagie</groupId>
-            <artifactId>itext</artifactId>
-            <version>${itext.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-        -->
-
-        <!-- METRICS : library that gives measure on the behavior of some application components -->
-        <dependency>
-            <groupId>com.codahale.metrics</groupId>
-            <artifactId>metrics-core</artifactId>
-            <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codahale.metrics</groupId>
-            <artifactId>metrics-servlets</artifactId>
-            <version>${metrics.version}</version>
-        </dependency>
-        <!-- METRICS-SPRING : Spring support -->
-        <dependency>
-            <groupId>com.ryantenney.metrics</groupId>
-            <artifactId>metrics-spring</artifactId>
-            <version>${metrics-spring.version}</version>
-        </dependency>
-
-        <!-- APACHE HTTP-CLIENT : used for URL health-checking -->
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>${httpclient.version}</version>
-        </dependency>
-        <!-- APACHE HTTP-FLUENT-HC : used for an easier usage of http-client -->
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>fluent-hc</artifactId>
-            <version>${httpclient.version}</version>
-        </dependency>
-
-        <!-- ======================== -->
-        <!-- PERFORMANCE OPTIMIZATION -->
-        <!-- ======================== -->
 
         <!-- ======= -->
         <!-- TESTING -->
@@ -469,32 +377,6 @@
             <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.fitnesse</groupId>
-            <artifactId>fitnesse</artifactId>
-            <version>${fitnesse.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
-        <!-- ======= -->
-        <!-- MAILING -->
-        <!-- ======= -->
-
-        <!-- JAVAX MAIL -->
-        <dependency>
-            <groupId>javax.mail</groupId>
-            <artifactId>mail</artifactId>
-            <version>${javax-mail.version}</version>
-        </dependency>
-
-        <!-- VELOCITY -->
-        <dependency>
-            <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity</artifactId>
-            <version>${velocity.version}</version>
-        </dependency>
-
 
         <!-- ================ -->
         <!-- HOSTING / HEROKU -->
@@ -595,33 +477,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Plugin used to manage AngularJS part -->
-            <!--
-            <plugin>
-                <groupId>pl.allegro</groupId>
-                <artifactId>grunt-maven-plugin</artifactId>
-                <version>${grunt-maven-plugin.version}</version>
-                <configuration>
-                    <showColors>true</showColors>
-                    <gruntOptions>
-                        <gruntOption>-verbose</gruntOption>
-                    </gruntOptions>
-                    <filteredResources>
-                        <filteredResource>maven-properties.json</filteredResource>
-                    </filteredResources>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>create-resources</goal>
-                            <goal>npm</goal>
-                            <goal>grunt</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            -->
-
             <!-- ========= -->
             <!-- PACKAGING -->
             <!-- ========= -->
@@ -680,93 +535,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <!-- ========= -->
-            <!-- REPORTING -->
-            <!-- ========= -->
-
-            <!-- Reporting quality plugins (such as PMD, Cobertura, Checkstyle) aggregator -->
-            <!-- Usage : execute command 'mvn site' and see the summary page is /target/site/project-reports.html -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>${maven-site-plugin.version}</version>
-                <configuration>
-                    <reportPlugins>
-                        <!-- Plugin used to evaluate code style -->
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-checkstyle-plugin</artifactId>
-                            <version>${maven-checkstyle-plugin.version}</version>
-                            <configuration>
-                                <configLocation>checkstyle.xml</configLocation>
-                            </configuration>
-                        </plugin>
-                        <!-- Plugin used to evaluate code quality -->
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-pmd-plugin</artifactId>
-                            <version>${maven-pmd-plugin.version}</version>
-                        </plugin>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-surefire-report-plugin</artifactId>
-                            <version>${maven-surefire-report-plugin.version}</version>
-                        </plugin>
-                        <!-- Plugin used to evaluate code coverage -->
-                        <plugin>
-                            <groupId>org.codehaus.mojo</groupId>
-                            <artifactId>cobertura-maven-plugin</artifactId>
-                            <version>${maven-cobertura-plugin.version}</version>
-                            <configuration>
-                                <formats>
-                                    <format>html</format>
-                                    <format>xml</format>
-                                </formats>
-                            </configuration>
-                        </plugin>
-                        <!-- Plugin used to generate Javadoc-->
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-javadoc-plugin</artifactId>
-                            <version>${maven-javadoc-plugin.version}</version>
-                        </plugin>
-                    </reportPlugins>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>fitnesse</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-antrun-plugin</artifactId>
-                        <version>${maven-antrun-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>start-fitnesse</id>
-                                <phase>test</phase>
-                                <configuration>
-                                    <tasks>
-                                        <echo taskname="fitnesse" message="Starting FitNesse..." />
-                                        <java classname="fitnesseMain.FitNesseMain" classpathref="maven.runtime.classpath" fork="true">
-                                            <arg line="-p 8000" />
-                                            <arg line="-d src/test/fitnesse" />
-                                        </java>
-                                    </tasks>
-                                </configuration>
-                                <goals>
-                                    <goal>run</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>

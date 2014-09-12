@@ -1,6 +1,5 @@
 package io.memento.infra.config;
 
-import com.codahale.metrics.servlets.AdminServlet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.WebApplicationInitializer;
