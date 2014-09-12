@@ -10,7 +10,6 @@ import org.springframework.jmx.export.naming.MetadataNamingStrategy;
 
 @Configuration
 @ComponentScan(basePackages = {"io.memento"})
-@EnableMBeanExport
 public class ApplicationConfig {
 
     @Bean
