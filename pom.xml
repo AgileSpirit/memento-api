@@ -1,21 +1,121 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>io.memento</groupId>
-  <artifactId>memento-api</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>memento-api Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  <build>
-    <finalName>memento-api</finalName>
-  </build>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.memento</groupId>
+    <artifactId>memento-api</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>memento-api Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <!--  -->
+        <jetty-project.version>9.2.2.v20140723</jetty-project.version>
+        <junit.version>3.8.1</junit.version>
+
+        <!--  -->
+        <maven-clean-plugin.version>2.5</maven-clean-plugin.version>
+        <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
+        <maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
+    </properties>
+
+    <dependencies>
+        <!-- ======= -->
+        <!-- TESTING -->
+        <!-- ======= -->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- ================ -->
+        <!-- HOSTING / HEROKU -->
+        <!-- ================ -->
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>${jetty-project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+            <version>${jetty-project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-annotations</artifactId>
+            <version>${jetty-project.version}</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <finalName>memento-api</finalName>
+
+        <plugins>
+            <!-- Plugin used to configure JDK version -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- Maven Eclipse integration & especially Web Tool Platform (WTP) support -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>${maven-eclipse-plugin.version}</version>
+                <configuration>
+                    <wtpapplicationxml>true</wtpapplicationxml>
+                    <wtpversion>2.0</wtpversion>
+                </configuration>
+            </plugin>
+
+            <!-- ===== -->
+            <!-- JETTY -->
+            <!-- ===== -->
+
+            <!-- Plugin used to run memento-api with : > mvn jetty:run  -->
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty-project.version}</version>
+            </plugin>
+
+            <!-- Plugin used for Heroku hosting -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.eclipse.jetty</groupId>
+                                    <artifactId>jetty-runner</artifactId>
+                                    <version>${jetty-project.version}</version>
+                                    <destFileName>jetty-runner.jar</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+    </build>
 </project>
