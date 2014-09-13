@@ -292,30 +292,11 @@
             <version>${jadira.version}</version>
         </dependency>
 
-        <!-- GOOGLE-GUAVA : useful Java tools & utils -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>${guava.version}</version>
-        </dependency>
-
         <!-- APACHE COMMONS-BEANUTILS : used for improved Java Reflection abilities -->
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>${commons-beanutils.version}</version>
-        </dependency>
-
-        <!-- ASPECTJ : AOP support through Spring -->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjrt</artifactId>
-            <version>${aspectj.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjtools</artifactId>
-            <version>${aspectj.version}</version>
         </dependency>
 
         <!-- ======= -->
@@ -376,26 +357,6 @@
             <artifactId>mockito-all</artifactId>
             <version>${mockito.version}</version>
             <scope>test</scope>
-        </dependency>
-
-        <!-- ================ -->
-        <!-- HOSTING / HEROKU -->
-        <!-- ================ -->
-
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-servlet</artifactId>
-            <version>${jetty-project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-webapp</artifactId>
-            <version>${jetty-project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-annotations</artifactId>
-            <version>${jetty-project.version}</version>
         </dependency>
     </dependencies>
 
@@ -459,21 +420,6 @@
                 <configuration>
                     <wtpapplicationxml>true</wtpapplicationxml>
                     <wtpversion>2.0</wtpversion>
-                </configuration>
-            </plugin>
-
-            <!-- Plugin used to clean AngularJS generated "target" folder -->
-            <plugin>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>${maven-clean-plugin.version}</version>
-                <configuration>
-                    <filesets>
-                        <fileset>
-                            <directory>target-grunt</directory>
-                            <directory>src/main/webapp/static/dist</directory>
-                            <followSymlinks>false</followSymlinks>
-                        </fileset>
-                    </filesets>
                 </configuration>
             </plugin>
 
