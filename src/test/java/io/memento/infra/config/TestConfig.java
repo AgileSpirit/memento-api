@@ -52,10 +52,10 @@ public class TestConfig implements EnvironmentConfig {
 
         // Hibernate
         properties.put("hibernate.dialect", SQL_DIALECT);
-        properties.put("hibernate.hbm2ddl.auto", "create");
-        properties.put("hibernate.show_sql", "false");
-        properties.put("hibernate.use_sql_comments", "false");
-        properties.put("hibernate.format_sql", "false");
+        properties.put("hibernate.hbm2ddl.auto", "create-drop");
+        properties.put("hibernate.show_sql", "true");
+        properties.put("hibernate.use_sql_comments", "true");
+        properties.put("hibernate.format_sql", "true");
 
         return properties;
     }
@@ -72,18 +72,6 @@ public class TestConfig implements EnvironmentConfig {
         DatabaseDataSourceConnectionFactoryBean databaseConnectionFactory = new DatabaseDataSourceConnectionFactoryBean(dataSource());
         databaseConnectionFactory.setDatabaseConfig(databaseConfig);
         return databaseConnectionFactory.getObject();
-    }
-
-    /*
-     * =======
-     * MAILING
-     * =======
-     */
-
-    @Bean
-    public Properties javaMailProperties() {
-        Properties properties = new Properties();
-        return properties;
     }
 
 }

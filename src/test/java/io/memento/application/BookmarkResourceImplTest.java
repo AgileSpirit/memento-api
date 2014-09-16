@@ -41,6 +41,7 @@ public class BookmarkResourceImplTest {
         Mockito.when(bookmark.getUrl()).thenReturn(SOME_URL);
         Mockito.when(bookmark.getTitle()).thenReturn(SOME_TITLE);
         Mockito.when(bookmark.getDescription()).thenReturn(SOME_DESCRIPTION);
+        Mockito.when(bookmark.getDescription()).thenReturn(SOME_DESCRIPTION);
     }
 
     /*

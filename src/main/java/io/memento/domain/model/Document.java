@@ -7,14 +7,14 @@ import javax.persistence.*;
 @JsonIgnoreProperties({"new", "owner"})
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="type", discriminatorType = DiscriminatorType.STRING)
+@DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING)
 public abstract class Document extends PersistableEntity {
 
     /*
      * ATTRIBUTES
      */
 
-    @ManyToOne(fetch=FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Account owner;
 
     @Column(nullable = true, length = 1024)
@@ -30,7 +30,7 @@ public abstract class Document extends PersistableEntity {
 
     public abstract String getType();
 
-   public String getTitle() {
+    public String getTitle() {
         return title;
     }
 
